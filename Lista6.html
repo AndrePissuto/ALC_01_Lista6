@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista6</title>
+</head>
+
+<body>
+
+    <div>
+        Insira uma frase: <input type="text" name="" id="ipt_fraseEx1">
+        <button onclick="analisarFrase()">Analisar frase</button>
+        <div id="out_frase"></div>
+    </div>
+
+    <div>
+
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script>
+
+
+    function analisarFrase() {
+        let frase = ipt_frase.value
+        out_frase.innerHTML = `Tamanho da Frase: ${frase.length}<br>`
+
+        if (frase.length < 10){
+            out_frase.innerHTML += `Frase curta<br>`
+        }
+        else{
+            out_frase.innerHTML += `Frase longa<br>`
+
+        }
+            
+
+
+    }
+
+
+</script>
