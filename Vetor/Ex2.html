@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ex2</h1>
+    <input type="text" name="" id="ipt_destinoViagem"><br>
+    <button onclick="adicionar()">Adicionar</button><br>
+    <button onclick="primeiraViagem()">Primeira viagem</button>
+    <div id="out_viagem"></div>
+
+
+
+    
+</body>
+</html>
+
+<script>
+
+    let listaViagens = []
+
+    function adicionar(){
+        listaViagens.push(String(ipt_destinoViagem.value))
+        ipt_destinoViagem.value = ''
+    }
+
+    function primeiraViagem(){
+
+        if(listaViagens[0] == undefined){
+            
+        }
+        else{
+
+        }
+    }
+
+
+
+</script>

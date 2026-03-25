@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista6 - vetor</title>
+</head>
+
+<body>
+
+
+    <div>
+        <h1>Frutas - Ex1</h1>
+        insira o nome de uma fruta: <input type="text" name="" id="ipt_nomefruta"><br>
+        <button onclick="feira()">Persquisar</button>
+        <div id="out_fruta"></div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+
+    function feira() {
+        let frutas = ["maçã", "abacaxi", "pêra"]
+        let frutaProcurada = String(ipt_nomefruta.value).toLocaleLowerCase()
+
+        let tem = frutas.indexOf(frutaProcurada)
+
+        if (tem == -1) {
+            out_fruta.innerHTML = `Não existe a fruta ${ipt_nomefruta.value} na lista.`
+        }
+        else {
+            out_fruta.innerHTML = ` A fruta ${ipt_nomefruta.value} existe na lista.`
+        }
+    }
+
+
+
+
+</script>
